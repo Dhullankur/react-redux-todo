@@ -74,6 +74,10 @@ export default function SignUp() {
         navigate('/')
     };
 
+    const handleSignin = () => {
+        navigate('/')
+    }
+
     return (
         <Container component="main" maxWidth="xs">
             <CssBaseline />
@@ -147,9 +151,9 @@ export default function SignUp() {
                     </Button>
                     <Grid container justifyContent="flex-end">
                         <Grid item>
-                            <Link href="#" variant="body2">
+                            <Button variant="text" onClick={handleSignin}>
                                 Already have an account? Sign in
-                            </Link>
+                            </Button>
                         </Grid>
                     </Grid>
                 </Box>
