@@ -16,11 +16,13 @@ const InputGroup = (props) => {
 
     const handleTitle = (event) => {
         const newTodo = { ...todo };
+        newTodo.title = "";
         newTodo.title = event.target.value;
         setTodo(newTodo);
     }
     const handleDescription = (event) => {
         const newTodo = { ...todo };
+        newTodo.description = "";
         newTodo.description = event.target.value;
         setTodo(newTodo);
     }
